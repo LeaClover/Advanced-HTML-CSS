@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.conteiner {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.heading {
+  color: #8A2BE2;
+}
+
+.nav {
+  display: flex;
+  gap: 16px;
+}
+.nav__link {
+  text-decoration: none;
+}
+
+.content {
+  display: flex;
+  gap: 16px;
+}
+.content__item {
+  height: 200px;
+  width: 300px;
+  border: 1px solid #000;
+}/*# sourceMappingURL=style.css.map */

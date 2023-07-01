@@ -1,1 +1,36 @@
-﻿
+﻿@import "vars";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.conteiner {
+    margin: 0 auto;
+    max-width: $siteWidth;
+}
+
+.heading {
+    color: $colorText;
+}
+
+.nav {
+    display: flex;
+    gap: $flexGap * 2;
+
+    &__link {
+        text-decoration: none;
+    }
+}
+
+.content {
+    display: flex;
+    gap: $flexGap * 2;
+
+    &__item {
+        height: 200px;
+        width: $siteWidth / 4;
+        border: $borderParam;
+    }
+}
