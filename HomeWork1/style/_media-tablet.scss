@@ -1,0 +1,132 @@
+﻿@media (max-width: 1024px) and (min-width: 768px) {
+    .center {
+        padding-left: calc(50% - 50vw);
+        padding-right: calc(50% - 50vw);
+    }
+
+    .header {
+        gap: 55%;
+
+        &__img1 {
+            padding-bottom: 1.13rem;
+        }
+
+        &__img2 {
+            padding-top: 1.19rem;
+            padding-bottom: 1.13rem;
+        }
+    }
+
+    .dropdown__content {
+        right: -10rem;
+    }
+
+    .top__info {
+        gap: 39px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main__photo {
+        max-width: 386px;
+    }
+
+    .block__text {
+        padding-top: 8.63rem;
+        padding-bottom: 8.63rem;
+        width: 19.44rem;
+    }
+
+    .title {
+        font-size: 2.75rem;
+        line-height: 3.31rem;
+    }
+
+    .title__newline {
+        font-size: 1.5rem;
+    }
+
+    .title__newline__pink {
+        font-size: 1.5rem;
+    }
+
+    .top__content {
+        padding-bottom: 6.88rem;
+        gap: 16px;
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 736px;
+        width: 96%;
+    }
+
+    .item {
+        padding-top: 3.62rem;
+        padding-bottom: 3.63rem;
+        background-size: 100%;
+    }
+
+    .item__big {
+        padding-top: 2.06rem;
+        padding-bottom: 2.06rem;
+    }
+
+    .content__textblock {
+        padding-bottom: 4.56rem;
+    }
+
+    .content__text {
+        padding-top: 0.19rem;
+    }
+
+    .items__block {
+        gap: 16px;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 736px;
+        width: 96%;
+    }
+
+    .item__content:hover:after {
+        top: 12rem;
+    }
+
+    .button__content {
+        margin-top: 2rem;
+        margin-bottom: 4.06rem;
+    }
+
+    .bottom__info {
+        flex-direction: column;
+        gap: 0px;
+        padding-bottom: 4rem;
+        margin: 0 auto;
+    }
+
+    .bottom__content {
+        padding-top: 3rem;
+        padding-bottom: 0rem;
+        width: 47%;
+    }
+
+    .feedback__block {
+        flex-direction: column;
+        gap: 48px;
+        background-size: cover;
+        padding-bottom: 8.75rem;
+        background-image: url(../img/bg-tablet.jpg);
+    }
+
+    .comment {
+        padding-bottom: 1.25rem;
+        width: 47%;
+    }
+
+    .feedback {
+        gap: 27px;
+        width: 73%;
+    }
+
+    .footer {
+        gap: 305px;
+    }
+}
