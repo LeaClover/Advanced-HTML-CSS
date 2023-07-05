@@ -8,6 +8,11 @@
     .header {
         gap: 50%;
         max-width: 767px;
+
+        &__img2 {
+            padding-top: 1.56rem;
+            padding-bottom: 1.63rem;
+        }
     }
 
     .dropdown__content {
@@ -23,47 +28,42 @@
         display: none;
     }
 
-    .img__header2 {
-        padding-top: 1.56rem;
-        padding-bottom: 1.63rem;
-    }
-
-    .top__info {
+    .top {
         max-width: 767px;
         justify-content: center;
+
+        &__main-photo {
+            display: none;
+        }
+
+        &__block {
+            max-width: 263px;
+            gap: 15px;
+            padding-top: 9.25rem;
+            padding-bottom: 9.31rem;
+            align-items: flex-end;
+        }
+
+        &__img-rectangle {
+            height: 3.81rem;
+            width: 0.75rem;
+        }
+
+        &__heading {
+            font-size: 2.38rem;
+            line-height: 2.88rem;
+
+            &__newline {
+                font-size: 1.25rem;
+            }
+
+            &_newline-pink {
+                font-size: 1.25rem;
+            }
+        }
     }
 
-    .main__photo {
-        display: none;
-    }
-
-    .block__text {
-        max-width: 263px;
-        gap: 15px;
-        padding-top: 9.25rem;
-        padding-bottom: 9.31rem;
-        align-items: flex-end;
-    }
-
-    .img__rectangle {
-        height: 3.81rem;
-        width: 0.75rem;
-    }
-
-    .title {
-        font-size: 2.38rem;
-        line-height: 2.88rem;
-    }
-
-    .title__newline {
-        font-size: 1.25rem;
-    }
-
-    .title__newline__pink {
-        font-size: 1.25rem;
-    }
-
-    .top__content {
+    .top-content {
         padding-top: 4rem;
         padding-bottom: 4rem;
         gap: 32px;
@@ -71,131 +71,128 @@
         flex-direction: column;
         width: 95%;
         max-width: 767px;
+
+        &__item {
+            padding-top: 6.13rem;
+            padding-bottom: 6.19rem;
+            max-width: 343px;
+            align-self: center;
+            min-height: 100%;
+            @include imageBG();
+
+            &__big {
+                padding-top: 1.88rem;
+                padding-bottom: 1.94rem;
+                grid-column: span 1;
+            }
+        }
     }
 
-    .item {
-        padding-top: 6.13rem;
-        padding-bottom: 6.19rem;
-        max-width: 343px;
-        align-self: center;
-        min-height: 100%;
-        @include imageBG();
+    .content {
+        &__text-block {
+            padding-bottom: 4.06rem;
+            width: 90%;
+        }
+
+        &__text {
+            padding-top: 0.19rem;
+        }
+
+        &__items-box {
+            gap: 16px;
+            grid-template-columns: repeat(1, 96vw);
+            width: 100%;
+            max-width: 767px;
+            justify-items: center;
+        }
+
+        &__item {
+            max-width: 359px;
+
+            & img {
+                width: 100%;
+            }
+
+            &:hover::after {
+                top: 11rem;
+            }
+        }
+
+        &__info {
+            width: 83.73vw;
+        }
+
+        &__button {
+            margin-top: 2.56rem;
+            margin-bottom: 6rem;
+        }
     }
 
-    .item__big {
-        padding-top: 1.88rem;
-        padding-bottom: 1.94rem;
-        grid-column: span 1;
-    }
-
-    .content__textblock {
-        padding-bottom: 4.06rem;
-        width: 90%;
-    }
-
-    .content__text {
-        padding-top: 0.19rem;
-    }
-
-    .items__block {
-        gap: 16px;
-        grid-template-columns: repeat(1, 96vw);
-        width: 100%;
-        max-width: 767px;
-        justify-items: center;
-    }
-
-    .item__content img {
-        width: 100%;
-    }
-
-    .item__content {
-        max-width: 359px;
-    }
-
-    .item__content:hover:after {
-        top: 11rem;
-    }
-
-    .block__content__text {
-        width: 83.73vw;
-    }
-
-    .button__content {
-        margin-top: 2.56rem;
-        margin-bottom: 6rem;
-    }
-
-    .bottom__info {
+    .bottom {
         padding-top: 0.06rem;
         padding-bottom: 5.06rem;
         flex-direction: column;
         gap: 0px;
+
+        &__content {
+            padding-top: 2.94rem;
+            padding-bottom: 0rem;
+            max-width: 348px;
+            width: 93%;
+        }
     }
 
-    .bottom__content {
-        padding-top: 2.94rem;
-        padding-bottom: 0rem;
-        max-width: 348px;
-        width: 93%;
-    }
-
-    .feedback__block {
+    .feedback {
         flex-direction: column;
         gap: 59px;
         padding-bottom: 8.75rem;
         background-image: url(../img/bg-mobile.jpg);
         @include imageBG();
-    }
 
-    .comment {
-        padding-bottom: 0rem;
-        width: 91%;
-    }
+        &__comment {
+            padding-bottom: 0rem;
+            width: 91%;
+        }
 
-    .comment__text {
-        font-size: 1.13rem;
-    }
+        &__comment-text {
+            font-size: 1.13rem;
+        }
 
-    .feedback__block {
-        background-position: center;
-    }
+        &__form {
+            gap: 22px;
+            max-width: 341px;
+            width: 91%;
+            @include imageBG();
+        }
 
-    .feedback {
-        gap: 22px;
-        max-width: 341px;
-        width: 91%;
-        @include imageBG();
-    }
+        &__heading__1 {
+            line-height: 1.25rem;
+        }
 
-    .heading__feedback {
-        line-height: 1.25rem;
-    }
+        &__heading__2 {
+            font-size: 0.81rem;
+        }
 
-    .heading__feedback2 {
-        font-size: 0.81rem;
-    }
+        &__input {
+            padding: 1rem 3.81vw 0.94rem 1.31vw;
+        }
 
-    .feedback__input {
-        padding: 1rem 3.81vw 0.94rem 1.31vw;
-    }
-
-    .button__feedback {
-        padding: 1rem 0.44vw 0.94rem 0.5vw;
+        &__button {
+            padding: 1rem 0.44vw 0.94rem 0.5vw;
+        }
     }
 
     .footer {
         flex-direction: column-reverse;
-    }
 
-    .footer__text {
-        padding-bottom: 0.56rem;
-        padding-top: 0rem;
-    }
+        &__text {
+            padding-bottom: 0.56rem;
+            padding-top: 0rem;
+        }
 
-    .footer__icons {
-        padding-top: 2.69rem;
-        padding-bottom: 2.5rem;
-
+        &__icons {
+            padding-top: 2.69rem;
+            padding-bottom: 2.5rem;
+        }
     }
 }
