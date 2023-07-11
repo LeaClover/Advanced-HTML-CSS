@@ -1,42 +1,16 @@
-﻿@mixin flexCenterRow() {
+﻿@mixin flex($wrap, $direction, $justify, $align) {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: $wrap;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
 }
 
-@mixin flexRowFlexEnd() {
+@mixin flex($wrap, $direction, $align) {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: flex-end;
-}
-
-@mixin flexColumnFlexStart() {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    align-items: flex-start;
-}
-
-@mixin flexWrapColumnCenter() {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-}
-
-@mixin flexWrapColumnFS() {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    align-items: flex-start;
+    flex-wrap: $wrap;
+    flex-direction: $direction;
+    align-items: $align;
 }
 
 @mixin marginAuto100($maxWidth) {
@@ -48,6 +22,13 @@
 
 @mixin marginAuto71($maxWidth) {
     width: 71.25%;
+    margin: 0 auto;
+    max-width: $maxWidth;
+    min-height: 100%;
+}
+
+@mixin marginAuto96($maxWidth) {
+    width: 96%;
     margin: 0 auto;
     max-width: $maxWidth;
     min-height: 100%;
