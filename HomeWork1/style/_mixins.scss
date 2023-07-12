@@ -1,4 +1,4 @@
-﻿@mixin flex($wrap, $direction, $justify, $align) {
+﻿@mixin flex4($wrap, $direction, $justify, $align) {
     display: flex;
     flex-wrap: $wrap;
     flex-direction: $direction;
@@ -6,7 +6,7 @@
     align-items: $align;
 }
 
-@mixin flex($wrap, $direction, $align) {
+@mixin flex3($wrap, $direction, $align) {
     display: flex;
     flex-wrap: $wrap;
     flex-direction: $direction;
