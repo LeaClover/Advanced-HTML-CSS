@@ -132,11 +132,7 @@ button {
         margin-top: 2rem;
         margin-bottom: 1.25rem;
         padding-left: 2rem;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        // align-content: flex-start;
-        // align-items: flex-start;
+        @include flex2(wrap, column);
     }
 
     &__heading {
@@ -451,9 +447,7 @@ button {
         }
 
         &__last {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
+            @include flex2(wrap, row);
             gap: 0;
         }
     }
@@ -784,7 +778,7 @@ button {
     &__line {
         max-width: 642px;
         width: 56.32%;
-        border: 1px solid #EBEBEB;
+        border: 1px solid $borderProductMain;
     }
 
     &__choose-block {
@@ -1011,18 +1005,14 @@ button {
 
     &__left-block {
         @include marginAuto100(652px);
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+        @include flex2(wrap, column);
         gap: 40px;
     }
 
     &__right-block {
         @include marginAuto100($widthItemContent);
         padding-top: 1.06rem;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+        @include flex2(wrap, column);
         gap: 57px;
     }
 
@@ -1056,9 +1046,7 @@ button {
     }
 
     &__text-block {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
+        @include flex2(wrap, column);
     }
 
     &__cart-heading {
@@ -1076,9 +1064,7 @@ button {
         font-size: 1.38rem;
         font-weight: 400;
         line-height: normal;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
+        @include flex2(wrap, column);
         gap: 6px;
     }
 
@@ -1097,15 +1083,10 @@ button {
         width: 100%;
         padding-top: 2rem;
         padding-bottom: 8rem;
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        flex-direction: row;
-        // gap: 192px;
+        @include flex3JC(nowrap, row, space-between);
     }
 
     &__button {
-        // вместо 35px -- 41 и 39
         padding: 1.06rem 2.19rem 1rem 2.19rem;
         border: 1px solid $textContent;
         background-color: $bgColor;
@@ -1126,10 +1107,7 @@ button {
     &__form {
         max-width: $widthItemContent;
         width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        flex-direction: column;
+        @include flex3JC(wrap, column, flex-start);
         gap: 20px;
     }
 
@@ -1153,7 +1131,6 @@ button {
         width: 100%;
         padding-top: 0.63rem;
         padding-bottom: 0.75rem;
-        // padding: 10px 14px 13px 15px;
         border: 1px solid $textContent;
         background-color: $bgColor;
         color: $textContentItem;
@@ -1174,11 +1151,8 @@ button {
         padding-top: 2.44rem;
         padding-bottom: 2.63rem;
         background-color: $bgContent;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
+        @include flex3(wrap, column, flex-end);
         align-content: center;
-        align-items: flex-end;
         gap: 12px;
 
         & img {
@@ -1247,9 +1221,7 @@ button {
 
     &__left-block {
         @include marginAuto100($widthItemContent);
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+        @include flex2(wrap, column);
     }
 
     &__form {
@@ -1261,10 +1233,7 @@ button {
     &__form-name {
         max-width: $widthItemContent;
         width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: flex-start;
+        @include flex3JC(wrap, column, flex-start);
         gap: 20px;
     }
 
@@ -1291,9 +1260,7 @@ button {
     &__form-gender {
         padding-top: 1.94rem;
         padding-bottom: 2.06rem;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
+        @include flex2(wrap, row);
         gap: 20px;
         color: $textBlack;
         font-size: 0.69rem;
@@ -1303,10 +1270,7 @@ button {
     }
 
     &__radio-label {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-items: center;
+        @include flex3(wrap, row, center);
         gap: 10px;
     }
 
@@ -1322,10 +1286,7 @@ button {
     &__form-data {
         max-width: $widthItemContent;
         width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: flex-start;
+        @include flex3JC(wrap, column, flex-start);
         gap: 20px;
     }
 
@@ -1360,9 +1321,7 @@ button {
 
     &__right-block {
         @include marginAuto100(652px);
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+        @include flex2(wrap, column);
     }
 
     &__info {
@@ -1382,9 +1341,7 @@ button {
     }
 
     &__info-list {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
+        @include flex2(wrap, column);
         gap: 16px;
         list-style-image: url("../img/marker-list.svg");
         padding-inline-start: 1.56rem;
