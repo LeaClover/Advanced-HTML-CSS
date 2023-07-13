@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Catalog</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
@@ -78,11 +78,11 @@
         <section class="bread-crumbs center">
             <h2 class="bread-crumbs__heading">NEW ARRIVALS</h2>
             <nav class="bread-crumbs__block-link">
-                <a href="#" class="bread-crumbs__link">HOME</a>
-                <p class="bread-crumbs__slash"> / </p>
-                <a href="#" class="bread-crumbs__link">MEN</a>
-                <p class="bread-crumbs__slash"> / </p>
-                <a href="#" class="bread-crumbs__link">NEW ARRIVALS</a>
+                <ul class="bread-crumbs__ul">
+                    <li class="bread-crumbs__li"><a href="#" class="bread-crumbs__link">HOME</a></li>
+                    <li class="bread-crumbs__li"><a href="#" class="bread-crumbs__link">MEN</a></li>
+                    <li class="bread-crumbs__li"><a href="#" class="bread-crumbs__link">NEW ARRIVALS</a></li>
+                </ul>
             </nav>
         </section>
     </div>
@@ -167,20 +167,28 @@
                     </summary>
                     <div class="sort__box">
                         <div class="sort__check">
-                            <input id="sort__check1" type="checkbox">
-                            <label for="sort__check1">XS</label>
+                            <label class="sort__label" for="sort__check1">
+                                <input id="sort__check1" type="checkbox">
+                                <span class="sort__custom-checkbox"></span>XS
+                            </label>
                         </div>
                         <div class="sort__check">
-                            <input id="sort__check2" type="checkbox">
-                            <label for="sort__check2">S</label>
+                            <label class="sort__label" for="sort__check2">
+                                <input id="sort__check2" type="checkbox">
+                                <span class="sort__custom-checkbox"></span>S
+                            </label>
                         </div>
                         <div class="sort__check">
-                            <input id="sort__check3" type="checkbox">
-                            <label for="sort__check3">M</label>
+                            <label class="sort__label" for="sort__check3">
+                                <input id="sort__check3" type="checkbox">
+                                <span class="sort__custom-checkbox"></span>M
+                            </label>
                         </div>
                         <div class="sort__check">
-                            <input id="sort__check4" type="checkbox">
-                            <label for="sort__check4">L</label>
+                            <label class="sort__label" for="sort__check4">
+                                <input id="sort__check4" type="checkbox">
+                                <span class="sort__custom-checkbox"></span>L
+                            </label>
                         </div>
                     </div>
                 </details>

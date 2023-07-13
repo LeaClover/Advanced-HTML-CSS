@@ -25,15 +25,20 @@ a {
     cursor: pointer;
 }
 
-li {
-    padding-left: 20px;
-}
-
 input[type="radio"] {
     display: none;
 }
 
 input[type="radio"]:checked+.registration__custom-radio {
+    background-color: $colorContentPink;
+    border-color: $colorContentPink;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked+.sort__custom-checkbox {
     background-color: $colorContentPink;
     border-color: $colorContentPink;
 }
@@ -638,7 +643,7 @@ button {
 }
 
 .bread-crumbs__conteiner {
-    background-color: $bgContent;
+    background-color: $bgMainHeading;
 }
 
 .bread-crumbs {
@@ -655,28 +660,36 @@ button {
         line-height: normal;
     }
 
-    &__block-link {
+    &__ul {
+        list-style-type: none;
         display: flex;
-        white-space: pre;
+    }
+
+    &__li:not(:last-child)::after {
+        content: '/';
+        padding-left: 8px;
+        padding-right: 8px;
         font-size: 0.88rem;
         font-weight: 300;
         line-height: normal;
         color: $dropdownLink;
-        gap: 3px;
     }
 
-    &__block-link a {
-        color: $dropdownLink;
-    }
-
-    &__block-link a:last-child {
+    &__li:last-child .bread-crumbs__link {
         color: $colorContentPink;
-        font-weight: bold;
+        font-weight: 700;
+    }
+
+    &__link {
+        font-size: 0.88rem;
+        font-weight: 300;
+        line-height: normal;
+        color: $dropdownLink;
     }
 }
 
 .carousel__conteiner {
-    background-color: $bgContent;
+    background-color: #F7F7F7;
 }
 
 .carousel {
@@ -911,7 +924,7 @@ button {
         display: flex;
         flex-direction: column;
         gap: 0.69rem;
-        padding: 1.5rem 1rem;
+        padding: 1.5rem 1rem 0.5rem 1rem;
     }
 
     &__link {
@@ -958,7 +971,7 @@ button {
     &__box {
         display: flex;
         flex-direction: column;
-        gap: 8px;
+        gap: 6px;
         background-color: $bgColor;
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
         padding: 0.44rem 1.88rem 0.69rem 0.56rem;
@@ -976,10 +989,25 @@ button {
         font-weight: 400;
         line-height: normal;
     }
+
+    &__label {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 9px;
+    }
+
+    &__custom-checkbox {
+        display: inline-block;
+        width: 13px;
+        height: 13px;
+        border: 1px solid $borderProductMain;
+        cursor: pointer;
+    }
 }
 
 .page-heading__conteiner {
-    background-color: $bgContent;
+    background-color: $bgMainHeading;
 }
 
 .page-heading {
@@ -1150,7 +1178,7 @@ button {
     &__checkout-block {
         padding-top: 2.44rem;
         padding-bottom: 2.63rem;
-        background-color: $bgContent;
+        background-color: $bgCheckOut;
         @include flex3(wrap, column, flex-end);
         align-content: center;
         gap: 12px;
@@ -1345,6 +1373,10 @@ button {
         gap: 16px;
         list-style-image: url("../img/marker-list.svg");
         padding-inline-start: 1.56rem;
+
+        & li {
+            padding-left: 20px;
+        }
     }
 }
 
