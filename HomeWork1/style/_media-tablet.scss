@@ -8,12 +8,12 @@
         gap: 55%;
 
         &__img1 {
-            padding-bottom: 1.13rem;
+            padding-bottom: 18px;
         }
 
         &__img2 {
-            padding-top: 1.19rem;
-            padding-bottom: 1.13rem;
+            padding-top: 19px;
+            padding-bottom: 18px;
         }
     }
 
@@ -33,14 +33,12 @@
         }
 
         &__block-text {
-            // padding-top: 8.63rem;
-            // padding-bottom: 8.63rem;
-            width: 19.44rem;
+            width: 311px;
         }
 
         &__heading {
             font-size: 2.75rem;
-            line-height: 3.31rem;
+            line-height: 53px;
 
             &__newline {
                 font-size: 1.5rem;
@@ -52,32 +50,33 @@
         }
     }
 
-    .top__content {
-        padding-bottom: 6.88rem;
-        gap: 16px;
+    .top-content {
+        gap: 20px;
+        padding-top: 20px;
+        padding-bottom: 155px;
         grid-template-columns: repeat(3, 1fr);
         max-width: 736px;
         width: 96%;
 
         &__item {
-            padding-top: 3.62rem;
-            padding-bottom: 3.63rem;
+            padding-top: 58px;
+            padding-bottom: 58px;
             background-size: 100%;
 
             &__big {
-                padding-top: 2.06rem;
-                padding-bottom: 2.06rem;
+                padding-top: 33px;
+                padding-bottom: 33px;
             }
         }
     }
 
     .content {
         &__text-block {
-            padding-bottom: 4.56rem;
+            padding-bottom: 73px;
         }
 
         &__text {
-            padding-top: 0.19rem;
+            padding-top: 3px;
         }
 
         &__items-box {
@@ -91,21 +90,29 @@
             top: 12rem;
         }
 
+        &__item-hidden {
+            display: none;
+        }
+
         &__button {
-            margin-top: 2rem;
-            margin-bottom: 4.06rem;
+            margin-top: 32px;
+            margin-bottom: 65px;
+        }
+
+        &__product-page {
+            padding-top: 700px;
         }
     }
 
     .bottom {
         flex-direction: column;
         gap: 0px;
-        padding-bottom: 4rem;
+        padding-bottom: 64px;
         margin: 0 auto;
 
         &__content {
-            padding-top: 3rem;
-            padding-bottom: 0rem;
+            padding-top: 48px;
+            padding-bottom: 0px;
             width: 47%;
         }
     }
@@ -114,11 +121,12 @@
         flex-direction: column;
         gap: 48px;
         background-size: cover;
-        padding-bottom: 8.75rem;
+        padding-bottom: 140px;
         background-image: url(../img/bg-tablet.jpg);
 
         &__comment {
-            padding-bottom: 1.25rem;
+            padding-top: 64px;
+            padding-bottom: 0px;
             width: 47%;
         }
 
@@ -130,5 +138,82 @@
 
     .footer {
         gap: 305px;
+    }
+
+    .product-main {
+        &__block {
+            width: 100%;
+        }
+
+        &__text {
+            max-width: 555px;
+            width: 100%;
+        }
+
+        &__line {
+            width: 83.5%;
+        }
+    }
+
+    .cart {
+        justify-content: center;
+
+        &__left-block {
+            max-width: 734px;
+            align-items: center;
+        }
+
+        &__product {
+            max-width: 734px;
+        }
+
+        &__buttons-block {
+            max-width: 508px;
+            justify-content: space-between;
+            padding-top: 22px;
+            padding-bottom: 64px;
+        }
+
+        &__right-block {
+            max-width: 768px;
+            flex-direction: row;
+            align-items: center;
+            gap: 15px;
+            justify-content: space-between;
+            padding-top: 0px;
+            padding-bottom: 128px;
+        }
+
+        &__checkout-block {
+            max-width: 360px;
+            width: 100%;
+        }
+    }
+
+    .registration {
+        padding-top: 40px;
+        gap: 3%;
+
+        &__left-block {
+            max-width: 47%;
+        }
+
+        &__right-block {
+            max-width: 46%;
+        }
+
+        &__info {
+            font-size: 16px;
+        }
+    }
+
+    .filter-sort {
+        max-width: 740px;
+        justify-content: space-between;
+    }
+
+    .filter {
+        width: 100%;
+        max-width: 360px;
     }
 }

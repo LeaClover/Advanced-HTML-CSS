@@ -1,0 +1,25 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+    gap: 10px;
+    justify-content: center;
+}
+
+.item {
+    border: 1px solid red;
+    min-height: 100px;
+}
+
+.big-item {
+    grid-column: span 2;
+    grid-row: span 2;
+}

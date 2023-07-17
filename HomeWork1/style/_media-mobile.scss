@@ -10,8 +10,8 @@
         max-width: 767px;
 
         &__img2 {
-            padding-top: 1.56rem;
-            padding-bottom: 1.63rem;
+            padding-top: 25px;
+            padding-bottom: 26px;
         }
     }
 
@@ -39,19 +39,19 @@
         &__block {
             max-width: 263px;
             gap: 15px;
-            padding-top: 9.25rem;
-            padding-bottom: 9.31rem;
+            padding-top: 148px;
+            padding-bottom: 149px;
             align-items: flex-end;
         }
 
-        &__img-rectangle {
-            height: 3.81rem;
-            width: 0.75rem;
-        }
+        // &__img-rectangle {
+        //     height: 3.81rem;
+        //     width: 0.75rem;
+        // }
 
         &__heading {
             font-size: 2.38rem;
-            line-height: 2.88rem;
+            line-height: 46px;
 
             &__newline {
                 font-size: 1.25rem;
@@ -64,8 +64,8 @@
     }
 
     .top-content {
-        padding-top: 4rem;
-        padding-bottom: 4rem;
+        padding-top: 64px;
+        padding-bottom: 64px;
         gap: 32px;
         display: flex;
         flex-direction: column;
@@ -73,16 +73,16 @@
         max-width: 767px;
 
         &__item {
-            padding-top: 6.13rem;
-            padding-bottom: 6.19rem;
+            padding-top: 98px;
+            padding-bottom: 99px;
             max-width: 343px;
             align-self: center;
             min-height: 100%;
             @include imageBG();
 
             &__big {
-                padding-top: 1.88rem;
-                padding-bottom: 1.94rem;
+                padding-top: 30px;
+                padding-bottom: 31px;
                 grid-column: span 1;
             }
         }
@@ -90,12 +90,12 @@
 
     .content {
         &__text-block {
-            padding-bottom: 4.06rem;
+            padding-bottom: 65px;
             width: 90%;
         }
 
         &__text {
-            padding-top: 0.19rem;
+            padding-top: 3px;
         }
 
         &__items-box {
@@ -123,20 +123,20 @@
         }
 
         &__button {
-            margin-top: 2.56rem;
-            margin-bottom: 6rem;
+            margin-top: 41px;
+            margin-bottom: 96px;
         }
     }
 
     .bottom {
-        padding-top: 0.06rem;
-        padding-bottom: 5.06rem;
+        padding-top: 1px;
+        padding-bottom: 81px;
         flex-direction: column;
         gap: 0px;
 
         &__content {
-            padding-top: 2.94rem;
-            padding-bottom: 0rem;
+            padding-top: 47px;
+            padding-bottom: 0px;
             max-width: 348px;
             width: 93%;
         }
@@ -145,12 +145,12 @@
     .feedback {
         flex-direction: column;
         gap: 59px;
-        padding-bottom: 8.75rem;
+        padding-bottom: 140px;
         background-image: url(../img/bg-mobile.jpg);
         @include imageBG();
 
         &__comment {
-            padding-bottom: 0rem;
+            padding-bottom: 0px;
             width: 91%;
         }
 
@@ -166,7 +166,7 @@
         }
 
         &__heading__1 {
-            line-height: 1.25rem;
+            line-height: 20px;
         }
 
         &__heading__2 {
@@ -174,11 +174,11 @@
         }
 
         &__input {
-            padding: 1rem 3.81vw 0.94rem 1.31vw;
+            padding: 16px 3.81vw 15px 1.31vw;
         }
 
         &__button {
-            padding: 1rem 0.44vw 0.94rem 0.5vw;
+            padding: 16px 0.44vw 15px 0.5vw;
         }
     }
 
@@ -186,13 +186,13 @@
         flex-direction: column-reverse;
 
         &__text {
-            padding-bottom: 0.56rem;
-            padding-top: 0rem;
+            padding-bottom: 9px;
+            padding-top: 0px;
         }
 
         &__icons {
-            padding-top: 2.69rem;
-            padding-bottom: 2.5rem;
+            padding-top: 43px;
+            padding-bottom: 40px;
         }
     }
 }
