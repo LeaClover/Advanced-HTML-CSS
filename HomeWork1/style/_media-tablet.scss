@@ -102,6 +102,11 @@
         &__product-page {
             padding-top: 700px;
         }
+
+        &__menu-pages {
+            margin-top: 40px;
+            margin-bottom: 63px;
+        }
     }
 
     .bottom {
@@ -174,6 +179,10 @@
             padding-bottom: 64px;
         }
 
+        &__button {
+            text-transform: uppercase;
+        }
+
         &__right-block {
             max-width: 768px;
             flex-direction: row;
@@ -182,6 +191,10 @@
             justify-content: space-between;
             padding-top: 0px;
             padding-bottom: 128px;
+        }
+
+        &__form-button {
+            text-transform: uppercase;
         }
 
         &__checkout-block {
@@ -209,7 +222,9 @@
 
     .filter-sort {
         max-width: 740px;
-        justify-content: space-between;
+        justify-content: flex-start;
+        padding-top: 11px;
+        height: 80px;
     }
 
     .filter {
